@@ -1,0 +1,200 @@
+
+/* =================================
+   1. REGLAGES GENERAUX
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b1120;
+    color: #e5e7eb;
+    line-height: 1.7;
+}
+
+/* =================================
+   2. EN-TETE
+================================= */
+
+header {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #111c35, #172554);
+    border-bottom: 1px solid #263550;
+}
+
+header h1 {
+    font-size: clamp(2.2rem, 6vw, 3.5rem);
+    color: #60a5fa;
+    margin-bottom: 12px;
+    letter-spacing: -1px;
+}
+
+header p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #cbd5e1;
+    font-size: 1.1rem;
+}
+
+/* =================================
+   3. CONTENU PRINCIPAL
+================================= */
+
+main {
+    width: min(100% - 40px, 1000px);
+    margin: 50px auto;
+}
+
+section {
+    background-color: #111827;
+    padding: 35px;
+    margin-bottom: 25px;
+    border: 1px solid #273449;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+section h2 {
+    color: #93c5fd;
+    font-size: 1.7rem;
+    margin-bottom: 16px;
+}
+
+section p {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+/* =================================
+   4. BOUTON DE CONTACT
+================================= */
+
+a {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+a:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* =================================
+   5. LISTE DES SERVICES
+================================= */
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 12px 0;
+    border-bottom: 1px solid #273449;
+    color: #e5e7eb;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li::before {
+    content: "✓ ";
+    color: #60a5fa;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* =================================
+   6. PIED DE PAGE
+================================= */
+
+footer {
+    text-align: center;
+    padding: 25px 20px;
+    background-color: #080d18;
+    border-top: 1px solid #263550;
+    color: #94a3b8;
+    font-size: 0.9rem;
+}
+
+/* =================================
+   7. ADAPTATION AUX TELEPHONES
+================================= */
+
+@media (max-width: 600px) {
+    header {
+        padding: 50px 18px;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        width: calc(100% - 28px);
+        margin: 25px auto;
+    }
+
+    section {
+        padding: 22px;
+        border-radius: 12px;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    a {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+/* =================================
+   8. PORTFOLIO DE DEMONSTRATION
+================================= */
+
+#realisations article {
+    background-color: #172033;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 22px;
+    margin-top: 18px;
+    transition: border-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+#realisations article:hover {
+    border-color: #60a5fa;
+    transform: translateY(-3px);
+}
+
+#realisations article h3 {
+    color: #60a5fa;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+}
+
+#realisations article p {
+    margin-bottom: 10px;
+}
+
+#realisations article p:last-child {
+    margin-bottom: 0;
+}
